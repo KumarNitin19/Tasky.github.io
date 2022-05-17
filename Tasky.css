@@ -1,0 +1,64 @@
+body{
+  background: #e9fff6;
+  font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    background: white;
+}
+.navbar-brand{
+    color: #58c596 !important;
+    font-weight: 500;
+}
+.logo{
+    width: 55px;
+}
+.card{
+    border: none;
+    background: #e9fff6;
+}
+.form-control, .form-control:focus{
+    background: #b3fce3 !important;
+    color: #113123;
+    border: none;
+    border-radius: 11px;
+    outline: none;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+input{
+    height: 50px;
+}
+
+input::placeholder {
+    color: #317256 !important;
+  }
+
+  textarea::placeholder {
+    color: #317256 !important;
+  }
+.submitButton{
+    background: #58c596;
+    color: white;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+}  
+
+.submitButton:hover{
+      background: black;
+      color: white;
+      transition: .5s;
+}
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: #58c596;
+}
+.navbar-toggler{
+    background-color: #58c596;
+    border: 1px solid #58c596;
+}
+.flatpickr-day.today:hover{
+    background: #58c596;
+}

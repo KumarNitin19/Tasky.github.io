@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasky</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./tasky.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./Tasky.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="navbar-brand">
+            <a class="navbar-brand mx-lg-4 mx-3" href="./index.html"><img class="logo" src="./tasky.jpg"></a>
+            <a class="navbar-brand" href="./Notes.html">To-do's</a>
+        </div>
+    </nav>
+    <div id="message"></div>
+    <div class="container my-3">
+        <h1>Add a To Do!!</h1>
+        <div class="card form-group-lg-2" id="message">
+            <div class="card-body">
+                <div class="form-group">
+                    <h4 class="card-title">Add Title</h4>
+                    <input type="text" class="form-control textArea form-group-lg-2" id="addTitle" aria-describedby="title"
+                        placeholder="Enter your title">
+                </div>
+                <h4 class="card-title">Add Text</h4>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3" placeholder="Enter text"></textarea>
+                </div>
+                <h4 class="card-title">Put an Alarm (optional)*</h4>
+                <div class="form-group" style="display: flex;">
+                    <!-- <input class="form-control" id="addAlarmDate" rows="3" placeholder="MM - DD - YYYY One Space Hr:Min:Sec"> -->
+
+                    <input type="datetime-local" class="form-control" id="addAlarmDate" placeholder="Select Date-Time">
+                </div>
+                <button class="btn submitButton" id="addBtn">Add Note</button>
+
+                <!-- Example single danger button -->
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- <hr>
+    <h1 class="container mx-5">Your Notes</h1>
+    <hr> -->
+    <!-- <div id="notes" class="row container-fluid mx-5"></div> -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        config = {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+            altInput: true,
+            altFormat: "F j, Y (H:S K)",
+        }
+        flatpickr("input[type=datetime-local]", config);
+        </script>
+        <script src="./main.js"></script>
+</body>
+
+</html>
