@@ -28,6 +28,8 @@ if (url == '/tasky.github.io/Notes.html') {
 
 if (url == '/tasky.github.io/index.html') {
 
+  console.log("Hello");
+
   let addBtn = document.getElementById("addBtn");
   addBtn.addEventListener("click", function (e) {
     console.log("hello")
