@@ -1,10 +1,9 @@
 
- console.log("Welcome to tasky app. This is tasky.js");
- let url = window.location.pathname;
- console.log(url);
+console.log("Welcome to tasky app. This is tasky.js");
+let url = window.location.pathname;
 if (url == '/tasky.github.io/Notes.html') {
   showNotes(null);
-  
+
 
   let search = document.getElementById('searchTxt');
   search.addEventListener("input", function () {
