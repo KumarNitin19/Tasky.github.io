@@ -1,6 +1,7 @@
 
-// console.log("Welcome to tasky app. This is tasky.js");
+ console.log("Welcome to tasky app. This is tasky.js");
 let url = window.location.pathname;
+console.log(url);
 if (url == '/Notes.html') {
   showNotes(null);
 
