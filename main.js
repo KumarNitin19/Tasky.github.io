@@ -26,7 +26,7 @@ if (url == '/tasky.github.io/Notes.html') {
 }
 
 
-if (url == '/tasky.github.io/tasky.html') {
+if (url == '/tasky.github.io/index.html') {
 
   let addBtn = document.getElementById("addBtn");
   addBtn.addEventListener("click", function (e) {
